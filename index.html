@@ -1,16 +1,226 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
 <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
 <style>
    
      
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    #web{
+        display: none;
+    }
     
     
+    .mobile
+    {
+        display: none;
+    }
+     .m_header
+    {
+        display: none;
+        background-color:#E0EEF2; 
+    }
     
+    @media only screen and (max-width: 1024px) {
+        .web
+        {
+            display: none;
+        }
+        .mobile
+    {
+        display: block;
+        text-align: center;
+    }
+     .m_header
+    {
+        display: block;
+    }
+}
+    
+    
+    .web{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+   
+.m_h1,.m_h2,.m_h3
+    {
+        display: inline;
+    }
+.m_h1
+    {
+        font-size: 2.3rem;
+    }
+.m_h2
+    {
+        font-size: 1.2rem;
+    }
+.m_h3
+    {
+        font-size: 0.9rem;
+    }
+.m_header
+    {
+        display:flex;
+        justify-content: center;
+        background-color:#53565A;
+        padding: 0.8rem;
+    }
+.m_mainbody,
+    {
+        display: inline-block;
+        
+    }
+.m_text_content
+    {
+        padding:0.2rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+.m_logos,.m_h5
+    {
+        display: inline-block;
+        padding: 0.6rem;
+        color: #53565A;
+        
+    }
+.m_h5_prj
+    {
+        padding: 0.8rem;
+        color: #53565A
+    }
+.m_skill_content
+    {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+    }
+.m_skill_web,.m_skill_android,.m_skill_git,.m_skill_coding_langs
+    {
+        display: flex;
+        justify-content:center;
+        align-content: center;
+        margin: 0px;
+        padding: 0px;
+    }
+.m_prj_prtflio,.m_prj_xo,.m_prj_doge,.m_prj_weather
+    {
+         display: flex;
+        justify-content:center;
+        align-content: center;
+        margin: 0px;
+        padding: 0.2rem;
+    }
+.m_h2_title
+    {
+        text-align:center;
+        font-size: 1.2rem;  
+    }
+.m_h2_contact
+    {
+        text-align:center;
+        font-size: 1.2rem; 
+        color: #F1F9F7;
+    }
+.m_footer
+    {
+        background-color: black;
+        color: #F1F9F7;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        
+        
+    }
+.m_contact_title
+    {
+        display: inline;
+        padding: 0.5rem;;
+        margin: 0px;
+        font-size: 0.1rem;
+    }
+.m_contact_content
+    {
+         display: inline;
+        padding: 0px;
+        margin: 0px;
+        font-size: 0.8rem;
+    }
+.contact_hr
+    {
+        
+        color: #F1F9F7;
+         background-color:#F1F9F7 ;
+         height: 0.08rem;
+        border-radius: 0.5rem;
+        
+    }
+.m_resume_a
+    {
+        text-align: center;
+    }
+.m_prj_links
+    {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+.m_resume
+    {
+        display: inline-block;
+        background-color: #44C059;
+        padding: 0.5rem;
+        border-radius: 5rem;
+        border-width: 0rem;
+        font-weight: bold;
+        color: white;
+        max-width: 10rem;
+    }
+.m_col
+    {
+        width: 0.1rem;
+        height: 8rem;
+        background-color: #F1F9F7;
+        display: inline-block;
+      
+        
+    }
+.m_contact_content_bar
+    {
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+.m_email_info
+    {
+        padding: 0.4rem;
+    }
+.m_phone_info
+    {
+        padding: 0.4rem;
+    }
+.m_socials
+    {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0.4rem;
+        margin-bottom: 1.5rem;
+    }
+hr
+    {
+        color: #53565A;
+        background-color: #53565A;
+        text-decoration: none;
+        height: 0.08rem;
+        border-radius: 0.5rem;
+        width: 18rem;
+            
+    }
 .tenp
     {
         color:red;
@@ -60,8 +270,11 @@ body
     }
 .main_image
     {
-        width: 50%;
-        height: 300%;
+        width: 40rem;
+        height: 30rem;
+        padding: 0px;
+        padding-left:2rem;
+        margin: 0px;
        
     }
 .bg_img
@@ -69,14 +282,17 @@ body
         padding: 0;
         margin: 0;
         height: 30.1rem;
-        width: 39.46rem;
+        width: 39.5rem;
+        text-align:end;
     }
 .main_content
     {
         padding-left: 2.8rem;
         margin: 0px;
         text-align: center;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
         justify-content: center;
     }
         
@@ -123,7 +339,7 @@ h3
     {
         font-size: 1.6rem;
     }
-header
+.w_header
 {
        background-color: #53565A;
         padding-top: 0.8rem;
@@ -196,68 +412,148 @@ pre
 </style> 
 </head>
 <body>
-<header>
-   
-    <div class="parent">
-        <div class="portfolio  grp1"><img src="portfolio_o.svg" alt="Portfio
+<header class="web w_header">
+    <div class="parent web">
+        <div class="portfolio  grp1 web"><img src="portfolio_o.svg" alt="Portfio
             "></div>
-        <div class="options grp1">
-            <div class="header_title  item"><span>Skills</span>
-                <div class="drpdwn" style="margin-right: 10rem; ">
-                    <p class="drp_title" >Skills</p>
-                    <div class=" webstuff drp"><h6>Web Development using html,css,js</h6></div>
-                    <div class="c drp"><h6>C/C++,Java,Dart</h6></div>
-                    <div class="android drp"><h6>Android Application Developmen</h6></div>
-                    <div class="ds drp"><h6>Data Science(R,Python)</h6></div>
-                    <div class="git drp"><h6>GIT and GITHUB</h6></div>
+        <div class="options grp1 web">
+            <div class="header_title  item web"><span class="web">Skills</span>
+                <div class="drpdwn web" style="margin-right: 10rem; ">
+                    <p class="drp_title web" >Skills</p>
+                    <div class=" webstuff drp web"><h6 class="web">Web Development using html,css,js</h6></div>
+                    <div class="c drp web"><h6 class="web">C/C++,Java,Dart</h6></div>
+                    <div class="android drp web"><h6 class="web">Android Application Developmen</h6></div>
+                    <div class="ds drp web"><h6 class="web">Data Science(R,Python)</h6></div>
+                    <div class="git drp web"><h6 class="web">GIT and GITHUB</h6></div>
                     
                 </div>
             </div>
-            <div class="header_title  item"><span>Projects</span>
-                <div class=" drpdwn">
-                    <p class="drp_title">Projects</p>
-                    <div class="webstuff drp"><a href="https://github.com/aaarc/TheXOGame" target="_blank"><h6 class="prj_title">The XO GAME</h6></a></div>
-                    <div class="prtflio drp"><a src="https://github.com/aaarc/Portfoilo-Webiste" target="_blank"><h6>Portfolio Website</h6></a></div>
-                    <div class="discord_chtbot drp"><a src=""><h6 class="prj_title">Doge-Sama</h6></a></div>
+            <div class="header_title  item web"><span class="web">Projects</span>
+                <div class=" drpdwn web">
+                    <p class="drp_title web">Projects</p>
+                    <div class="webstuff drp web"><a href="https://github.com/aaarc/TheXOGame" target="_blank"><h6 class="prj_title web">The XO GAME</h6></a></div>
+                    <div class="prtflio drp web"><a href="https://github.com/aaarc/Portfoilo-Webiste" target="_blank"><h6>Portfolio Website</h6></a></div>
+                    <div class="discord_chtbot drp web"><a href=""><h6 class="prj_title web">Doge-Sama</h6></a></div>
                     
                     
                 </div>
             </div>
-            <div class="header_title  item"><span>Contact Me</span>
-                <div class="skills_drop drpdwn">
-                    <p class="drp_title">Contact Me</p>
-                    <div class="email drp"><a><h6 class="title_for_subelements">Email</h6>
-                        <pre class="subelements_small">
+            <div class="header_title  item web"><span class="web">Contact Me</span>
+                <div class="skills_drop drpdwn web">
+                    <p class="drp_title web">Contact Me</p>
+                    <div class="email drp web"><a><h6 class="title_for_subelements web">Email</h6>
+                        <pre class="subelements_small web">
 
 aaarcadithya@gmail.com
 adithyanarayansamal@gmail.com</pre></a></div>
-                    <div class="phno drp"><h6 class="title_for_subelements">Phone Number</h6><pre class="subelements">
+                    <div class="phno drp web"><h6 class="title_for_subelements web">Phone Number</h6><pre class="subelements web">
 
 +91 9940726436
 +91 8939680091</pre></div>
-                        <div class="lkndin drp"><a href="https://www.linkedin.com/in/adithya-narayan-samal-249b3019a/" target="_blank"><h6>Linked In</h6></a></div>
-                        <div class="github drp"><a href="https://github.com/aaarc" target="_blank"><h6>Github</h6></a></div>
-                        <div class="insta drp"><a href="https://www.instagram.com/aaarc_adithya/" target="_blank"><h6>Instagram</h6></a></div>
-                            <div class="whatsapp drp"><a href="https://wa.me/919940726436" target="_blank"><h6>Whatsapp</h6></a></div>
-                    
+                        <div class="lkndin drp web"><a href="https://www.linkedin.com/in/adithya-narayan-samal-249b3019a/"><h6>Linked In</h6></a></div>
+                        <div class="github drp web"><a href="https://github.com/aaarc"><h6>Github</h6></a></div>
+                        <div class="insta drp web"><a href="https://www.instagram.com/aaarc_adithya/"><h6>Instagram</h6></a></div>
+                            <div class="whatsapp drp web"><a href="https://wa.me/919940726436" target="_blank"><h6>Whatsapp</h6></a></div>
                 </div>
             </div>
         </div>     
     </div>
 </header>
-   <div class="main">
-    <div class="main_content main_item">
-    <pre><h2 class="content">
+<header class="mobile m_header">
+        <div class="mobile m_parent">
+            <div class="mobile"><img src="portfolio_o_mobile.svg" class="mobile ">
+            </div>
+        </div>
+    </header>
+   <div class="main web">
+    <div class="main_content main_item web">
+    <pre class="web"><h2 class="content web">
     Hey, This is
-    <h1>Adithya</h1>
-    <h3>    a 3rd Year<strong> Computer Science</strong> Student 
+    <h1 class="web">Adithya</h1>
+    <h3 class="web">    a 3rd Year<strong> Computer Science</strong> Student 
     from <strong> VIT Vellore</strong> and passionate about
     anything related to <strong >Technology</strong></h3></h2></pre>
-    
-    <a href="Resume.pdf" target="_blank"><button class="resume">Download My Resume</button></a>
-    
+        <br>
+    &nbsp;<a href="Resume.pdf" target="_blank" class="web"><button class="resume web">Download My Resume</button></a>
     </div>
-    <div class="main_image main_item"><img src="bg_img_3.jpg" class="bg_img" alt="bg_image"></div></div>
-    <div class="tenp"></div>
+    <div class="main_image main_item web"><img src="bg_img_3.jpg" class="bg_img" alt="bg_image"></div></div><div class="tenp web"></div>
+    <div class="mobile m_mainbody">
+        <div class="mobile m_text_content">
+            <pre><h2 class="mobile m_h2">
+Hey, This is</h2>
+<h1 class="mobile m_h1">Adithya</h1>
+<h3 class="mobile m_h3">a 3rd Year<strong> Computer Science</strong> Student 
+from <strong> VIT Vellore</strong> and passionate about
+anything related to <strong >Technology</strong></h3><br>
+<a href="Resume.pdf" target="_blank" class="mobile m_resume"><button class="m_resume mobile">Download My Resume</button></a>
+</pre>
+    
+        </div>
+        <div class="mobile m_main_img">
+            <img>
+        </div>
+    </div>
+    <hr class="mobile">
+    <div class="mobile m_skills">
+    <div class="mobile m_skills_content">
+        <h2 class="mobile m_h2_title ">My Skillset Include</h2>
+        <div class="mobile m_skill_git">
+            <img src="code.svg" class=" mobile m_logos"><h6 class="mobile m_h5">Programming in C/C++,Java,JavaScript,Python,Dart</h6> 
+        </div>
+         <div class="mobile m_skill_web m_skill_common">
+            <img src="web_dev_logo.svg" class=" mobile m_logos"><h5 class="mobile m_h5">Web Development (with HTML5,CSS2,JS)</h5> 
+        </div>
+        <div class="mobile m_skill_android m_skill_common">
+            <img src="mobile.svg" class=" mobile m_logos"><h5 class="mobile m_h5">Android Development (using Dart)</h5> 
+        </div>
+        <div class="mobile m_skill_git m_skill_common">
+            <img src="ds_logo.svg" class=" mobile m_logos"><h5 class="mobile m_h5">Data Science (with R,Python)</h5> 
+        </div>
+          <div class="mobile m_skill_git m_skill_common">
+            <img src="code.svg" class=" mobile m_logos"><h5 class="mobile m_h5">Git and Github</h5> 
+        </div>
+        </div>
+    </div>
+    <hr class="mobile">
+    <div class="mobile m_projects">
+        
+        <div class="mobile m_projects_content"><h2 class="mobile m_h2_title ">PROJECTS</h2>
+
+            <div class="mobile m_prj_doge">
+                 <a class="mobile  m_prj_links" href="https://github.com/aaarc/TheXOGame" target="_blank"><img src="flag_icon.svg" class=" mobile m_logos"><h5 class="mobile m_h5_prj">The XO Game: basic tic-tac-toe app with great UI</h5> </a>
+        </div>
+            <div class="mobile m_prj_doge">
+                 <a class="mobile  m_prj_links"><img src="flag_icon.svg" class=" mobile m_logos"><h5 class="mobile m_h5_prj">Doge-Sama: bot to manage Discord Servers</h5> </a>
+        </div>
+            <div class="mobile m_prj_weather">
+                <a class="mobile  m_prj_links"><img src="flag_icon.svg" class=" mobile m_logos"><h5 class="mobile m_h5_prj">Whether?: a Simple Weather App</h5></a> 
+        </div>
+            <div class="mobile m_prj_prtflio">
+            <a class="mobile m_prj_links" href="https://github.com/aaarc/Portfoilo-Webiste" target="_blank"><img src="flag_icon.svg" class=" mobile m_logos"><h5 class="mobile m_h5_prj">Portfolio Website</h5></a>
+        </div>
+        </div>
+        
+    </div>
+    <footer class=" mobile m_footer">
+    <h2 class="mobile m_h2_contact ">Contact Me</h2>
+    <div class="mobile m_contact">
+        <div class="mobile m_contact_content_bar">
+        <div class="mobile m_email_info"><p class="mobile m_contact_subtitle">Email</p><pre class="mobile m_contact_content">aaarcadithya@gmail.com
+adithyanarayansamal@gmail.com</pre></div>
+            <div class="moblie m_col"></div>
+             <div class="mobile m_phone_info"><p class="mobile m_contact_subtitle">Phone Number</p><pre class="mobile m_contact_content">+91 9940726436
++91 8939680091</pre></div>
+        </div>
+        <div class="mobile bottom_bar">
+        <h2 class="mobile m_h2_contact ">You can find me on</h2>
+        <div class="mobile m_socials">
+            <a href="https://wa.me/919940726436" target="_blank" class="moblie"><img src="whatsapp.svg" class="mobile m_logos"></a>
+            <a href="https://www.linkedin.com/in/adithya-narayan-samal-249b3019a/" target="_blank" class="moblie"><img src="linkedin.svg" class="mobile m_logos"></a>
+            <a href="https://www.instagram.com/aaarc_adithya/" target="_blank" class="moblie"><img src="instagram.svg" class="mobile m_logos"></a>
+            <a href="https://github.com/aaarc" target="_blank" class="moblie"><img src="github.svg" class="mobile m_logos"></a>
+        </div>
+        </div>
+    </div>
+    </footer>
     </body>
 </html>
